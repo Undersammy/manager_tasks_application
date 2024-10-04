@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from .models import Task as TaskModel
-from .schemas import TaskCreate
+from models import Task as TaskModel
+from schemas import TaskCreate
 
 class TaskRepository:
     def __init__(self, db: Session):
